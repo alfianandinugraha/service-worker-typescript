@@ -1,0 +1,17 @@
+{
+  "name": "service-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:sw": "tsc --project tsconfig.sw.json --watch",
+    "start:app": "tsc --project tsconfig.app.json --watch",
+    "start": "npm run run:sw && npm run run:app"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
