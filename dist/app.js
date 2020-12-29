@@ -3,7 +3,7 @@ if ('serviceWorker' in navigator) {
     window.addEventListener("load", function () {
         navigator
             .serviceWorker
-            .register("../sw.js")
+            .register("/service-worker-typescript/sw.js")
             .then(function () { return console.log("registration success !"); })["catch"](function () { return console.error("registration failed !"); });
     });
 }
